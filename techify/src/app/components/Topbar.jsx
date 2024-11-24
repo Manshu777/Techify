@@ -56,8 +56,8 @@ function Topbar() {
       <div className="flex flex-wrap justify-center lg:justify-between items-center text-white">
         <div className="hidden md:flex items-center mb-2 lg:mb-0 gap-6">
           {data.map((item, index) => (
-            <Link href={item.link} target="blank">
-              <div key={index} className="flex items-center gap-1 ">
+            <Link key={index} href={item.link} target="blank">
+              <div className="flex items-center gap-1 ">
                 {item.icon}
                 <p className="font-normal font-sans">{item.data}</p>
               </div>
@@ -68,8 +68,8 @@ function Topbar() {
         <div className="flex items-center gap-3">
           <p className=" font-sans font-medium">Follow Us On :</p>
           {socialIcons.map((item, index) => (
-            <Link href={item.href} target="blank">
-              <div key={index}>{item.icon}</div>
+            <Link key={index} href={item.href} target="blank">
+              <div>{item.icon}</div>
             </Link>
           ))}
         </div>
