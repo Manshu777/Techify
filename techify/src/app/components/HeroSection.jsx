@@ -2,6 +2,7 @@
 import { FaPlay } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
@@ -34,10 +35,10 @@ const HeroSection = () => {
           <div className="flex flex-wrap items-center gap-6 lg:justify-start">
             <Link
               href="/about-us"
-              className="bg-[#684df4] hover:bg-black click-btn btn-style text-white font-medium px-4 md:px-6 py-4 md:py-6 rounded-md"
+              className="bg-[#684df4] hover:bg-black transition duration-500 click-btn btn-style text-white font-medium px-4 md:px-6 py-4 md:py-6 rounded-md"
             >
               ABOUT US
-              <i className="fas fa-long-arrow-right ml-2"></i>
+              <FaArrowRightLong className="ml-2"/>
             </Link>
             <div className="flex items-center gap-3">
               <div className="wrapper">

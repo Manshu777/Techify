@@ -95,3 +95,8 @@
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
+
+.font{
+  font-family: 'Roboto, sans-serif';
+}
+
